@@ -33,7 +33,7 @@ endif
 # keep standard at C11 and C++11
 CFLAGS   = -I.              -O3 -DNDEBUG -std=c11   -fPIC
 CXXFLAGS = -I. -I./examples -O3 -DNDEBUG -std=c++11 -fPIC
-LDFLAGS  =
+LDFLAGS  = -lrt
 
 # warnings
 CFLAGS   += -Wall -Wextra -Wpedantic -Wcast-qual -Wdouble-promotion -Wshadow -Wstrict-prototypes -Wpointer-arith -Wno-unused-function
